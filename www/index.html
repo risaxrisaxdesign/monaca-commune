@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+	<script src="components/loader.js"></script>
+	<link rel="stylesheet" href="components/loader.css">
+	<link rel="stylesheet" href="css/style.css">
+    <!--<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">google.load("jquery", "1.2");</script>-->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+	<script>
+	angular.module('myApp', ['onsen.directives']);
+	/*var app = angular.module('myApp', ['onsen']);
+	
+	$(function() {
+		$.get("data/sample-talklist.json" , function(data) {
+			//var ulObj = $("#demo"),
+			//var len = data.length;
+				
+			for(var i = 0; i < len; i++) {
+				ulObj.append($("<li>").text(data[i].name).text(data[i].newSentence));
+			}
+		});
+		document.getElementById("demo").textContent=data;
+	});*/
+	
+	</script>
+
+</head>
+<body>
+    <ons-tabbar var="tabbar">
+        <ons-tabbar-item
+            icon="ion-home"
+            label="マイページ"
+            page="page2.html"
+            active="true"></ons-tabbar-item>
+        <ons-tabbar-item
+            icon="ion-chatbox-working"
+            label="トーク"
+            page="navigator.html"></ons-tabbar-item>
+        <ons-tabbar-item
+        	icon="fa-picture-o"
+        	label="ギャラリー"
+        	page="page2.html"></ons-tabbar-item>
+        <ons-tabbar-item
+            icon="gear"
+            label="設定"
+            page="page3.html"></ons-tabbar-item>
+    </ons-tabbar>
+
+</body>
+</html>
